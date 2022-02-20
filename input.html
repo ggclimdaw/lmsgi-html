@@ -1,0 +1,142 @@
+<!--
+    Author: Guillermo Garcia Climent @ggclim
+     Date: Febrer de 2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    
+</head>
+<body>
+    <form name="for1">
+        <p>Exemple d'una llegenda de formulari</p>      
+        <label for="fname">Nom:</label>
+        <input type="text" id="fname" name="fname" value="Name" placeholder="Nom" autofocus><br>
+        <label for="lemail">Email:</label>        
+        <input type="email" id="lemail" name="email" value="Email" required><br>
+        <label for="button">Botó:</label> 
+        <input type="button" id="boto" name="boto" value="Button"><br><br>
+        <label for="check">Un sol Checkboxes</label> 
+        <input type="checkbox" id="check" name="check"><br>
+    </form>    
+    <form name="for2">
+        <fieldset>
+            <p>Grup de Checkboxes</p>
+            <label for="check">Checkbox 1</label> 
+            <input type="checkbox" id="check" name="check">
+            <label for="check">Checkbox 2</label> 
+            <input type="checkbox" id="check" name="check">
+            <label for="check">Checkbox 3</label> 
+            <input type="checkbox" id="check" name="check">
+            <label for="check">Checkbox 4</label> 
+            <input type="checkbox" id="check" name="check">
+        </fieldset>
+    </form>
+    <form name="for3">
+        <label>Color:</label>
+        <input type="color" name="color"><br>
+        <label>Data: </label>
+        <input type="date" name="Fecha"><br>
+        <label>Data, Hora (Local):</label>
+        <input type="datetime-local" name="Fechahora"><br>
+        <label>Fitxer: </label>
+        <input type="file" name="file"><br><br>
+        <label>Número: </label>
+        <input type="number" name="numero"><br>
+        <label for="lpass">Contrasenya:</label>        
+        <input type="password" id="lpass" name="pass" maxlength="9"><br>
+        <label>Un Radio: </label>
+        <input type="radio" id="radio" name="radio" value="radio">
+    </form>  
+    <form name="for4">  
+        <fieldset>  
+            <p>Grup de Radios</p>
+            <label>Radio 1: </label>
+            <input type="radio" id="radio" name="radio1" value="radio1"> 
+            <label>Radio 2: </label>
+            <input type="radio" id="radio" name="radio2" value="radio">
+            <label>Radio 3: </label>
+            <input type="radio" id="radio" name="radio3" value="radio">
+            <label>Radio 4: </label>
+            <input type="radio" id="radio" name="radio4" value="radio">
+        </fieldset>
+    </form>
+    <form name="for5">         
+        <label>Rang: </label>
+        <input type="range" name="rango" min="0" max="5"><br>
+        <label>Reset: </label>
+        <input type="reset" value="Reset"><br>
+        <label>Temps: </label>
+        <input type="time" name="hora"><br>
+        <label>Cerca: </label>
+        <input type="search" name="search" value="search"><br>
+        <label>Tel: </label>
+        <input type="tel" name="phone" value="tel"><br>
+        <label for="ltext">Text:</label>        
+        <input type="text" id="ltext" name="text" value="text"><br>
+        <label>URL: </label>
+        <input type="url" name="url" value="url"><br>
+        <input type="button" onclick="alert('PA QUE APRETES?');" value="Açó es un botó!"><br>
+    </form> 
+
+        <!--LISTA SELECCIONABLE-->
+    <form name="for6" method="post" action="http://pagina.com/send.php">
+            <!-- Lista de selección -->
+            Selec 1:
+            <select name="combo">
+              <!-- Opciones de la lista -->
+              <option value="1">Test 1</option>
+              <option value="2" selected>Test 2</option> <!-- Opción por defecto -->
+              <option value="3">Test 3</option>
+            </select>
+    </form>
+        <br>
+                <!--LISTA SELECCIONABLE ABIERTA-->
+    <form name="for7" method="post" action="/send.php">
+                    <!-- Campo de texto combinado con lista de opciones -->
+                    <label>Selec 2</label>
+                    <input type="text" list="items"/>
+                    <!-- Lista de opciones -->
+                    <datalist id="items">
+                      <option value="Test1"></option>
+                      <option value="Test2"></option>
+                      <option value="Test3"></option>
+                    </datalist>
+    </form>
+           <br>       
+        <!--LISTA SELECCIONABLE MÚLTIPLE-->
+    <form name="for8">
+            <!-- Lista de selección múltiple -->
+            <label>Selec multiple</label>
+            <select name="combo" multiple>
+              <!-- Formato alternativo con atributo label -->
+              <optgroup label="Firts Group">
+                <option value="1" label="Test 1"> </option>
+              </optgroup>          
+              <optgroup label="Second Group">
+                <option value="2" label="Test 2"> </option>
+                <option value="3" label="Test 3"> </option>
+              </optgroup>
+              <optgroup label="Third Group">
+                <option value="2" label="Test 4"> </option>
+                <option value="3" label="Test 5"> </option>
+              </optgroup>
+            </select>
+    </form>
+        <br>
+    <form name="for9">
+            <!-- Area de texto extensa -->
+            <label>Un textarea!</label>
+            <textarea name="texto" cols="40" rows="5" placeholder="Escriu ací el text...">
+              Escriu ací...
+            </textarea>
+    </form>
+
+        <br>
+        <input type="submit" value="Go">
+</body>
+</html>
