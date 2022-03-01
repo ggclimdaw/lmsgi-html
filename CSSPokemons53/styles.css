@@ -1,0 +1,30 @@
+#barradalt:hover{
+    background-color: black;
+    -webkit-box-shadow: 8px 8px 8px 8px #909090;
+    -moz-box-shadow: 8px 8px 8px 8px #909090;
+    box-shadow: 8px 8px 8px 8px #909090;
+}
+.fondo{
+    background-color: aquamarine;
+    text-align-last: center;
+    border: 5rem;
+
+}
+
+article {
+    border: 1px solid black;
+    border-radius: 1em;
+    height: 300px;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    width: 100%;
+
+  }
+
+  body{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+
+  }
